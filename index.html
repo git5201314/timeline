@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>时光轴特效</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div id="hide">			
+			<div id="tpl-s-year">
+				<a href="javascript:;" class="s-year" id="s-year-{year}">{year}</a>
+				{list}
+			</div>
+			
+			<div id="tpl-s-month">
+				<a href="javascript:;" data-year="{year}" data-month="{month}" class="s-month s-month-{year}" id="s-month-{year}{month}">{month}月</a>
+			</div>
+			
+			<div id="tpl-c-year">
+				<div class="c-year" id="c-year-{year}">{year}</div>
+				{list}
+			</div>
+			
+			<div id="tpl-c-clear">
+				<div class="c-clear" data-year="{year}" data-month="{month}" id="c-month-{year}{month}"></div>
+			</div>
+			
+			<div id="tpl-c-item">
+				<div class="c-item {first} {pos}">
+					<div class="c-i-icon-arrow"></div>
+					<div class="c-i-icon-dot">
+						<div class="c-i-icon-dot-child"></div>
+					</div>
+					<div class="c-i-head">
+						<div class="c-i-head-title">
+							<i class="c-i-head-icon">{lunar}</i><span class="c-i-head-date">{date}</span>
+						</div>
+						<div class="c-i-head-intro">
+							<i class="ui-icon quote-before"></i>
+							{intro}
+							<i class="ui-icon quote-after"></i>
+						</div>
+					</div>
+					<div class="c-i-media">
+						<img src="img/psb.jpeg"/>
+					</div>
+					<div class="c-i-footer">
+						<div class="c-i-f-info">
+							<a href="javascript:;" class="op-zan"><i class="ui-icon icon-zan"></i>({zan})</a>
+							<a href="javascript:;" class="op-pin"><i class="ui-icon icon-pin"></i>({pin})</a>
+						</div>
+						<div class="c-i-f-like">{like}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="top-nav"></div>
+		<div id="head-menu"></div>
+		<div id="container">
+			<div id="scrubber" class="scrubber">
+				<!--<a href="javascript:;" class="cur">2014</a>
+				<a href="javascript:;" class="cur">3月</a>
+				<a href="javascript:;">2月</a>
+				<a href="javascript:;">2013</a>
+				<a href="javascript:;">3月</a>
+				<a href="javascript:;">2月</a>-->
+			</div>
+			<div id="content" class="content">
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-2.0.3.js" ></script>
+		<script type="text/javascript" src="js/GetLunarDay.js" ></script>
+		<script type="text/javascript" src="js/data.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	</body>
+</html>

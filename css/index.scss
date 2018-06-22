@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #1c0c0f url(../img/1.jpg) no-repeat center 0 fixed;
+    font-size: 12px;
+    font-family: "微软雅黑", "microsoft yahei";
+    padding-top: 41px;
+}
+
+#hide{
+    display: none;
+}
+
+#top-nav{
+    width: 100%;
+    height: 41px;
+    background-color: #001E3B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#head-menu{
+    width: 960px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #fff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+#container{
+    width: 960px;
+    min-height: 1000px;
+    margin: 0 auto;
+    position: relative;
+    
+    #scrubber{
+        width: 47px;
+        min-height: 100px;
+        position: absolute;
+        left: 0;
+        top: 29px;
+        
+        a{
+            display: block;
+            line-height: 26px;
+            padding-right: 5px;
+            color: #a5a5a5;
+            border-right: 2px solid #c8c8c8;
+            border-right-color: rgba(200, 200, 200, .5);
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+            text-align: right;
+        }
+        
+        a:hover, a.cur{
+            color: #7ebad0;
+            border-right-color: #7ebad0;
+            font-weight: bold;
+        }        
+        a:hover{
+            text-decoration: underline;
+        }
+        a.cur:hover{
+            text-decoration: none;
+        }
+    }
+    
+    .content{
+        min-height: 1000px;
+        padding-left: 160px;
+        padding-top: 50px;
+        background: url(../img/spine.png) repeat-y 121px 0;
+        overflow: hidden;
+        
+        .c-year{
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            color: #a5a5a5;
+            font-weight: bold;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+            position: relative;
+            left: -90px;
+            clear: both;
+        }
+        
+        .c-clear{
+            height: 40px;
+            clear: both;
+        }
+        
+        .c-item.c-item-left{
+            float: left;
+        }
+        .c-item.c-item-first{
+            margin-top: -20px;
+        }
+        .c-item.c-item-right{
+            float: right;
+            
+            .c-i-icon-dot{
+                left: -443px;
+            }
+        }        
+        .c-item{
+            width: 370px;
+            min-height: 300px;
+            background-color: #fff;
+            border-radius: 4px;
+            margin: 20px 30px 0 0;
+            position: relative;
+            
+            .c-i-icon-arrow{
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-left: 0 solid transparent;
+                border-right: 10px solid #fff;
+                position: absolute;
+                left: -10px;
+                top: 20px;
+            }
+            
+            .c-i-icon-dot{
+                width: 11px;
+                height: 11px;
+                background-color: #fff;
+                border-radius: 50%;
+                position: absolute;
+                left: -43px;
+                top: 25px;
+                
+                .c-i-icon-dot-child{
+                    width: 7px;
+                    height: 7px;
+                    background-color: #b3dae9;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 2px;
+                    top: 2px;
+                }
+            }
+            
+            .c-i-head{
+                padding: 15px 15px 0 15px;                
+                color: #888;
+                
+                .c-i-head-title{
+                    padding-bottom: 10px;
+                }
+                .c-i-head-title .c-i-head-icon{
+                    display: inline-block;
+                    width: 23px;
+                    padding-left: 23px;
+                    line-height: 23px;
+                    background-color: #b3dae9;
+                    border-radius: 8px;
+                    color: #fff;
+                    font-size: 23px;
+                    font-style: normal;
+                    text-indent: -1em;
+                    letter-spacing: 1em;
+                }
+                .c-i-head-title .c-i-head-date{
+                    display: inline-block;
+                    padding-left: 10px;
+                    line-height: 46px;
+                    font-size: 28px;
+                    vertical-align: top;
+                }
+                
+                .c-i-head-intro{
+                    padding: 0 15px;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    line-height: 22px;
+                    
+                    .ui-icon{
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        background: url(../img/timeline.png) no-repeat;
+                        font-size: 0;
+                        overflow: hidden;
+                    }
+                    .quote-before{
+                        background-position: -986px -85px;
+                        margin-right: 5px;
+                    }
+                    .quote-after{
+                        background-position: -986px -102px;
+                        margin-left: 5px;
+                        vertical-align: bottom;
+                    }
+                }
+            }
+            
+            .c-i-media{
+                height: 277px;
+                padding-bottom: 10px;
+                overflow: hidden;
+                
+                img{
+                    width: 100%;
+                }
+            }
+            
+            .c-i-footer{
+                padding: 10px 15px;
+                margin: 0 15px;
+                
+                .c-i-f-info{
+                    a{
+                        padding-right: 10px;
+                        line-height: 20px;
+                        color: #b2b2b2;
+                        vertical-align: top;
+                        
+                        .ui-icon{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            background: url(../img/timeline.png) no-repeat;
+                        }
+                        .icon-zan{
+                            background-position: -883px -21px;
+                        }
+                        .icon-pin{
+                            background-position: -897px -42px;
+                        }
+                    }
+                    a:hover{
+                        color: #b3dae9;
+                        text-decoration: underline;
+                    }
+                }
+                
+                .c-i-f-like{
+                    padding-top: 5px;
+                    line-height: 20px;
+                    color: #b2b2b2;
+                }
+            }
+        }
+    }
+}
